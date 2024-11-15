@@ -21,8 +21,26 @@
 </head>
 
 <body>
-  <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
+      <!-- Banner -->
+    <div class="relative isolate flex items-center gap-x-6 overflow-hidden text-white bg-medicalink-blue px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <p class="text-sm/6">
+          <strong class="font-semibold">Medicalink EHR</strong><svg viewBox="0 0 2 2" class="mx-2 inline size-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Sri Lanka's Next Generation of Electronic Health Record System
+        </p>
+        <a href="#" class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="flex flex-1 justify-end">
+        <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+          <span class="sr-only">Dismiss</span>
+          <svg class="size-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
+            <path d="M6.28 5.22a.75.75 0 0 0-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 1 0 1.06 1.06L10 11.06l3.72 3.72a.75.75 0 1 0 1.06-1.06L11.06 10l3.72-3.72a.75.75 0 0 0-1.06-1.06L10 8.94 6.28 5.22Z" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation -->
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
@@ -41,11 +59,10 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
+          <a href="/index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
           <a href="#services" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
-          <a href="#team" class="text-sm font-semibold leading-6 text-gray-900">Team</a>
-          <a href="#pricing" class="text-sm font-semibold leading-6 text-gray-900">Pricing</a>
-          <a href="#contactus" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
+          <a href="/about.html" class="text-sm font-semibold leading-6 text-gray-900">About</a>
+          <a href="/contact.html" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
@@ -54,8 +71,6 @@
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
       <div class="hidden" role="dialog" aria-modal="true" id="sidebar">
-        <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-50"></div>
         <div
           class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div class="flex items-center justify-between">
@@ -74,15 +89,13 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="#"
+                <a href="/index.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
                 <a href="#services"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Services</a>
-                <a href="#team"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Team</a>
-                <a href="#pricing"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Pricing</a>
-                <a href="#contactus"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products</a>
+                <a href="/about.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
+                <a href="/contact.html"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact
                   Us</a>
               </div>
@@ -96,513 +109,107 @@
         </div>
       </div>
     </header>
+     
 
-    <!-- Background backdrop, show/hide based on slide-over state. -->
+    <!-- Introduction block -->
     <div class="relative isolate px-6 pt-20 lg:px-8">
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#0b7bbe] to-[#fff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
       <div class="mx-auto max-w-2xl py-24 sm:py- lg:py">
         <div class="text-center">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Introducing, MedicaLink</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">The Next Generation of Electronic Health Records Designed to
-            Revolutionize Healthcare in Sri Lanka.</p>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Our goal is to provide seamless, secure, and accessible health
-            records to ensure the best care for you & your family.</p>
+          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">Lorem ipsum dolor sit amet.</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ipsam soluta illum quos minima? At, atque, hic dolores</p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus libero porro.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <div
-              class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-              Launching Soon, Stay Tuned. <a href="#" class="text-medicalink-blue"><span class="absolute inset-0"
-                  aria-hidden="true"></span>Watch Promo <span aria-hidden="true">&rarr;</span></a>
-            </div>
+            <a href="#" class="flex-none rounded-full bg-green-600 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </div>
-      <!-- Background backdrop, show/hide based on slide-over state. -->
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#0b7bbe] to-[#fff] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
     </div>
-  </div>
 
-  <!-- Services -->
-  <section id="services">
-    <div class="overflow-hidden bg-white py-24 sm:py-32">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div
-          class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-          <div class="lg:pr-8 lg:pt-4">
-            <div class="lg:max-w-lg">
-              <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our Services</p>
-              <p class="mt-6 text-lg leading-8 text-gray-600">With MedicaLink, you can effortlessly manage all medical
-                information from various providers, ensuring that your child’s health history is always up-to-date and
-                at your fingertips.</p>
-              <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
-                <div class="relative pl-9">
-                  <dt class="inline font-semibold text-gray-900">
-                    <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
-                      fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd"
-                        d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    Access on the fly:
-                  </dt>
-                  <dd class="inline">Securely access your health records online, from anywhere, at anytime.</dd>
-                </div>
-                <div class="relative pl-9">
-                  <dt class="inline font-semibold text-gray-900">
-                    <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
-                      fill="currentColor" aria-hidden="true">
-                      <path fill-rule="evenodd"
-                        d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    Secure Medical Record Storage:
-                  </dt>
-                  <dd class="inline">All your health records are stored with the highest level of security.</dd>
-                </div>
-                <div class="relative pl-9">
-                  <dt class="inline font-semibold text-gray-900">
-                    <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
-                      fill="currentColor" aria-hidden="true">
-                      <path
-                        d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                      <path fill-rule="evenodd"
-                        d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                        clip-rule="evenodd" />
-                    </svg>
-                    User-Friendly Interface:
-                  </dt>
-                  <dd class="inline">Simple and intuitive design for easy navigation and use.</dd>
-                </div>
-              </dl>
+    <!-- Medicalink EHR Callout -->
+    <section id="services">
+      <div class="overflow-hidden bg-white py-5 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+          <div
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            <div class="lg:pr-8 lg:pt-4">
+              <div class="lg:max-w-lg">
+                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Medicalink EHR</p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">With MedicaLink EHR, you can effortlessly manage all medical
+                  information from various providers, ensuring that your child’s health history is always up-to-date and
+                  at your fingertips.</p>
+                <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-gray-900">
+                      <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      Access on the fly:
+                    </dt>
+                    <dd class="inline">Securely access your health records online, from anywhere, at anytime.</dd>
+                  </div>
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-gray-900">
+                      <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd"
+                          d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      Secure Medical Record Storage:
+                    </dt>
+                    <dd class="inline">All your health records are stored with the highest level of security.</dd>
+                  </div>
+                  <div class="relative pl-9">
+                    <dt class="inline font-semibold text-gray-900">
+                      <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
+                        fill="currentColor" aria-hidden="true">
+                        <path
+                          d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
+                        <path fill-rule="evenodd"
+                          d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      User-Friendly Interface:
+                    </dt>
+                    <dd class="inline">Simple and intuitive design for easy navigation and use.</dd>
+                  </div>
+                </dl>
+              </div>
             </div>
+            <img src="assets/images/o3.png" alt="Product screenshot"
+              class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+              width="2432" height="1442">
           </div>
-          <img src="assets/images/admin-dashboard.png" alt="Product screenshot"
-            class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            width="2432" height="1442">
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <div class="relative isolate px-6 pt-20 lg:px-8">
-    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-      <div
-        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#0b7bbe] to-[#fff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
-        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-      </div>
-    </div>
-
-    <div class="py-24 sm:py-32">
+    <!-- Stats block -->
+    <div class="mt-5 py-24 sm:py-32 bg-medicalink-blue text-white">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-gray-600">Registered Users</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">5+</dd>
+            <dt class="text-base leading-7">Registered Users</dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">5+</dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-gray-600">Medical Institutions Onboard</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">0</dd>
+            <dt class="text-base leading-7 ">Medical Institutions Onboard</dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">0</dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 text-gray-600">Medical Records</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">10</dd>
+            <dt class="text-base leading-7">Medical Records</dt>
+            <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">10</dd>
           </div>
         </dl>
       </div>
     </div>
-
-    <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="relative isolate px-6 pt-20 lg:px-8">
-      <div
-        class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
-        aria-hidden="true">
-        <div
-          class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#0b7bbe] to-[#fff] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
-          style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-        </div>
-      </div>
-    </div>
-
-    <!-- Pricing -->
-    <section id="pricing">
-      <div class="py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl sm:text-center">
-            <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl mb-2">Simple no-tricks pricing</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600 mb-6">No setup, or hidden fees</p>
-          </div>
-          <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0 mt-4">
-            <!-- Pricing Card -->
-            <div
-              class="flex flex-col p-6 mx-auto max-w-lg text-center text-black bg-white border rounded-xl shadow xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
-              <p class="font-light text-black sm:text-lg">3 Month FREE Trial</p>
-              <div class="flex justify-center items-baseline my-8">
-                <span class="mr-2 text-5xl font-extrabold">17500</span>
-                <span class="text-gray-500">/month</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                <li class="flex items-center text-gray-500 space-x-3">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span>Add, View & Update Medical Records</span>
-                </li>
-                <li class="flex items-center space-x-3 text-gray-500">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">150</span> Individual Patients</span>
-                </li>
-                <li class="flex items-center space-x-3 text-gray-500">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">2</span> Admin Accounts</span>
-                </li>
-              </ul>
-              <a href="#contactus"
-                class="bg-medicalink-blue focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center text-white">Get
-                started</a>
-            </div>
-            <!-- Pricing Card -->
-            <div
-              class="flex flex-col p-6 mx-auto max-w-lg text-center text-black bg-white border rounded-xl shadow xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">Standard</h3>
-              <div class="flex justify-center items-baseline my-8">
-                <span class="mr-2 text-5xl font-extrabold">175K</span>
-                <span class="text-gray-500">/month</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                <li class="flex items-center text-gray-500 space-x-3">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span>Add, View & Update Medical Records</span>
-                </li>
-                <li class="flex items-center space-x-3 text-gray-500">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">1000</span> Individual Patients</span>
-                </li>
-                <li class="flex items-center space-x-3 text-gray-500">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">20</span> Admin Accounts</span>
-                </li>
-                <li class="flex items-center text-gray-500 space-x-3">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">24/7</span> Customer Support</span>
-                </li>
-              </ul>
-              <a href="#contactus"
-                class="bg-medicalink-blue focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center text-white">Get
-                started</a>
-            </div>
-            <!-- Pricing Card -->
-            <div
-              class="flex flex-col p-6 mx-auto max-w-lg text-center text-black bg-white border rounded-xl shadow xl:p-8">
-              <h3 class="mb-4 text-2xl font-semibold">Premium</h3>
-              <div class="flex justify-center items-baseline my-8">
-                <span class="mr-2 text-5xl font-extrabold">350K</span>
-                <span class="text-gray-500">/month</span>
-              </div>
-              <!-- List -->
-              <ul role="list" class="mb-8 space-y-4 text-left">
-                <li class="flex items-center text-gray-500 space-x-3">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span>AI medical analysis</span>
-                </li>
-                <li class="flex items-center text-gray-500 space-x-3">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span>Add, View & Update Medical Records</span>
-                </li>
-                <li class="flex items-center text-gray-500 space-x-3">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">24/7</span> Customer Support</span>
-                </li>
-                <li class="flex items-center space-x-3 text-gray-500">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">5000</span> Individual Patients</span>
-                </li>
-                <li class="flex items-center space-x-3 text-gray-500">
-                  <!-- Icon -->
-                  <svg class="flex-shrink-0 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  <span><span class="font-semibold">2</span> Admin Accounts per every 100 Patients</span>
-                </li>
-              </ul>
-              <a href="#contactus"
-                class="bg-medicalink-blue focus:ring-4 focus:ring-primary-200 font-medium rounded-lg text-sm px-5 py-2.5 text-center text-white">Get
-                started</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <!-- Team -->
-    <section id="team">
-      <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto grid max-w-7xl gap-x-16 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
-          <div class="max-w-2xl">
-            <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meet our Team</h2>
-            <p class="mt-6 text-lg leading-8 text-gray-600">Meet the dedicated team behind MedicaLink who are committed
-              to ensuring the best care for your health information</p>
-          </div>
-          <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-            <li>
-              <div class="flex items-center gap-x-6">
-                <img class="h-16 w-16 rounded-full" src="./assets/images/team/Chiranga.jpg" alt="">
-                <div>
-                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Chiranga Shalitha</h3>
-                  <p class="text-sm font-semibold leading-6 text-medicalink-blue">Developer/Lead</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-x-6">
-                <img class="h-16 w-16 rounded-full" src="./assets/images/team/Nisala.jpg" alt="">
-                <div>
-                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Nisala Develigoda</h3>
-                  <p class="text-sm font-semibold leading-6 text-medicalink-blue">Developer</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-x-6">
-                <img class="h-16 w-16 rounded-full" src="./assets/images/team/Chathusha.jpg" alt="">
-                <div>
-                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Chathusha Mendis</h3>
-                  <p class="text-sm font-semibold leading-6 text-medicalink-blue">Developer</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-x-6">
-                <img class="h-16 w-16 rounded-full" src="./assets/images/team/Seneli.jpg" alt="">
-                <div>
-                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Seneli Jayasinghe</h3>
-                  <p class="text-sm font-semibold leading-6 text-medicalink-blue">Business Analyst</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="flex items-center gap-x-6">
-                <img class="h-16 w-16 rounded-full" src="./assets/images/team/Nishadi.jpg" alt="">
-                <div>
-                  <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Nishadi Wijesinghe</h3>
-                  <p class="text-sm font-semibold leading-6 text-medicalink-blue">Business Analyst</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Us -->
-    <section id="contactus">
-      <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <div class="max-w-2xl lg:max-w-5xl mx-auto">
-          <div class="text-center">
-            <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl">
-              Contact us
-            </h1>
-            <p class="mt-1 text-gray-600">
-              We'd love to talk about how we can help you.
-            </p>
-          </div>
-
-          <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-            <!-- Card -->
-            <div class="flex flex-col border rounded-xl p-4 sm:p-6 lg:p-8">
-              <h2 class="mb-8 text-xl font-semibold text-gray-800">
-                Fill in the form
-              </h2>
-
-              <form>
-                <div class="grid gap-4">
-                  <!-- Grid -->
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label for="hs-firstname-contacts-1" class="sr-only">First Name</label>
-                      <input type="text" name="hs-firstname-contacts-1" id="hs-firstname-contacts-1"
-                        class="py-3 px-4 block w-full rounded-lg text-sm border-2" placeholder="First Name">
-                    </div>
-
-                    <div>
-                      <label for="hs-lastname-contacts-1" class="sr-only">Last Name</label>
-                      <input type="text" name="hs-lastname-contacts-1" id="hs-lastname-contacts-1"
-                        class="py-3 px-4 block w-full rounded-lg text-sm border-2" placeholder="Last Name">
-                    </div>
-                  </div>
-                  <!-- End Grid -->
-
-                  <div>
-                    <label for="hs-email-contacts-1" class="sr-only">Email</label>
-                    <input type="email" name="hs-email-contacts-1" id="hs-email-contacts-1" autocomplete="email"
-                      class="py-3 px-4 block w-full rounded-lg text-sm border-2" placeholder="Email">
-                  </div>
-
-                  <div>
-                    <label for="hs-phone-number-1" class="sr-only">Phone Number</label>
-                    <input type="text" name="hs-phone-number-1" id="hs-phone-number-1"
-                      class="py-3 px-4 block w-full rounded-lg text-sm border-2" placeholder="Phone Number">
-                  </div>
-
-                  <div>
-                    <label for="hs-about-contacts-1" class="sr-only">Details</label>
-                    <textarea id="hs-about-contacts-1" name="hs-about-contacts-1" rows="4"
-                      class="py-3 px-4 block w-full rounded-lg text-sm border-2" placeholder="Details"></textarea>
-                  </div>
-                </div>
-                <!-- End Grid -->
-
-                <div class="mt-4 grid">
-                  <button type="submit"
-                    class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-medicalink-blue text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">Send
-                    inquiry</button>
-                </div>
-
-                <div class="mt-3 text-center">
-                  <p class="text-sm text-gray-500">
-                    We'll get back to you as soon as possible.
-                  </p>
-                </div>
-              </form>
-            </div>
-            <!-- End Card -->
-
-            <div class="divide-y divide-gray-200">
-              <!-- Icon Block -->
-              <div class="flex gap-x-7 py-6">
-                <span class="material-symbols-outlined">
-                  notifications_active
-                </span>
-                <div class="grow">
-                  <h3 class="font-semibold text-gray-800">Follow us on Social Media</h3>
-                  <p class="mt-1 text-sm text-gray-500"></p>
-                  <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800"
-                    href="https://www.instagram.com/medicalinksrilanka/">
-                    Instagram
-                    <svg class="flex-shrink-0 size-2.5 transition ease-in-out group-hover:translate-x-1" width="16"
-                      height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
-                        fill="currentColor" />
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <!-- End Icon Block -->
-
-              <!-- Icon Block -->
-              <div class=" flex gap-x-7 py-6">
-                <svg class="flex-shrink-0 size-6 mt-1.5 text-gray-800" xmlns="http://www.w3.org/2000/svg" width="24"
-                  height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                  stroke-linecap="round" stroke-linejoin="round">
-                  <path
-                    d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" />
-                  <path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" />
-                </svg>
-                <div class="grow">
-                  <h3 class="font-semibold text-gray-800">Contact us by email</h3>
-                  <p class="mt-1 text-sm text-gray-500">If you wish to write us an email instead please use</p>
-                  <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800"
-                    href="mailto:medicalink.team@gmail.com">
-                    medicalink.team@gmail.com
-                  </a>
-                </div>
-              </div>
-              <!-- End Icon Block -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Contact Us -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>
