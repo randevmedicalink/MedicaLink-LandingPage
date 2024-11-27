@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon//favicon.svg" />
+    <link rel="shortcut icon" href="/assets/icons/favicon//favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon//apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Medicalink" />
+    <link rel="manifest" href="/site.webmanifest" />
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>MedicaLink - Your Personal EHR</title>
+  </head>
 
-  <title>MedicaLink - Your Personal EHR</title>
-</head>
-
-<body>
-    <header class="absolute inset-x-0 top-0 z-50">
+  <body>
+    <header class="absolute inset-x-0 top-0 z-50 sticky bg-white">
       <!-- Banner -->
-    <!-- <div id="blue-banner" class="relative isolate flex items-center gap-x-6 overflow-hidden text-white bg-medicalink-blue px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+      <!-- <div id="blue-banner" class="relative isolate flex items-center gap-x-6 overflow-hidden text-white bg-medicalink-blue px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
       <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
         <p class="text-sm/6">
           <strong class="font-semibold">MedicaLink EHR</strong><svg viewBox="0 0 2 2" class="mx-2 inline size-0.5 fill-current" aria-hidden="true"><circle cx="1" cy="1" r="1" /></svg>Sri Lanka's Next Generation of Electronic Health Record System
@@ -40,87 +47,176 @@
       </div>
     </div> -->
 
-    <!-- Navigation -->
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <!-- Navigation -->
+      <nav
+        class="flex items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">MedicaLink</span>
-            <img class="h-10 w-auto" src="./assets/icons/main-logo-header.png" alt="">
+            <img
+              class="h-10 w-auto"
+              src="./assets/icons/main-logo-header.png"
+              alt=""
+            />
           </a>
         </div>
         <div class="flex lg:hidden md:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-            id="menu-btn">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            id="menu-btn"
+          >
             <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-              aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
             </svg>
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-          <a href="#services" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
-          <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">About</a>
-          <a href="contact.html" class="text-sm font-semibold leading-6 text-gray-900">Contact Us</a>
+          <a
+            href="index.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Home</a
+          >
+          <a
+            href="#services"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Services</a
+          >
+          <a
+            href="about.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Contact Us</a
+          >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="redirect.html" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
-              aria-hidden="true">&rarr;</span></a>
+          <a
+            href="redirect.html"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Log in <span aria-hidden="true">&rarr;</span></a
+          >
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
       <div class="hidden" role="dialog" aria-modal="true" id="sidebar">
         <div
-          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
           <div class="flex items-center justify-between">
             <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">MedicaLink</span>
-              <img class="h-10 w-auto" src="./assets/icons/main-logo-header.png" alt="">
+              <img
+                class="h-10 w-auto"
+                src="./assets/icons/main-logo-header.png"
+                alt=""
+              />
             </a>
-            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" id="close-btn">
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              id="close-btn"
+            >
               <span class="sr-only">Close menu</span>
-              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                aria-hidden="true">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             </button>
           </div>
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a href="index.html"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Home</a>
-                <a href="#services"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Products</a>
-                <a href="about.html"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">About</a>
-                <a href="contact.html"
-                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact
-                  Us</a>
+                <a
+                  href="index.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Home</a
+                >
+                <a
+                  href="#services"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Products</a
+                >
+                <a
+                  href="about.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >About</a
+                >
+                <a
+                  href="contact.html"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Contact Us</a
+                >
               </div>
               <div class="py-6">
-                <a href="redirect.html"
-                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
-                  in</a>
+                <a
+                  href="redirect.html"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-     
 
     <!-- Introduction block -->
     <div class="relative isolate px-6 pt-8 lg:px-8">
       <div class="mx-auto max-w-6xl py-24 mt-5">
         <div class="text-center">
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Introducing, MedicaLink EHR.</h1>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Effortlessly manage all your health records in one place. MedicaLink EHR enables secure, streamlined, and centralized access to your medical records, making healthcare management easier for both patients and providers.</p>
-          <p class="mt-6 text-lg leading-8 text-gray-600">Register now to simplify your healthcare experience.</p>
+          <h1
+            class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          >
+            Introducing, MedicaLink EHR.
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Effortlessly manage all your health records in one place. MedicaLink
+            EHR enables secure, streamlined, and centralized access to your
+            medical records, making healthcare management easier for both
+            patients and providers.
+          </p>
+          <p class="mt-6 text-lg leading-8 text-gray-600">
+            Register now to simplify your healthcare experience.
+          </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="redirect.html" class="flex-none rounded-full bg-pink-800 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register now <span aria-hidden="true">&rarr;</span></a>
-            <a href="redirect.html" class="flex-none rounded-full bg-medicalink-blue px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+            <a
+              href="redirect.html"
+              class="flex-none rounded-full bg-pink-800 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+              >Register now <span aria-hidden="true">&rarr;</span></a
+            >
+            <a
+              href="redirect.html"
+              class="flex-none rounded-full bg-medicalink-blue px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+              >Log in <span aria-hidden="true">&rarr;</span></a
+            >
           </div>
         </div>
       </div>
@@ -131,56 +227,99 @@
       <div class="overflow-hidden bg-white py-5 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div
-            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+            class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+          >
             <div class="lg:pr-8 lg:pt-4">
               <div class="lg:max-w-lg">
-                <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl">Your Health Journey at your Fingertips.</p>
-                <p class="mt-6 text-lg leading-8 text-gray-600">From lab results to doctor’s notes, all your medical information is securely stored and accessible to you and your healthcare providers, facilitating faster diagnosis, better treatment, and a seamless care experience.</p>
-                <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                <p
+                  class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-2xl"
+                >
+                  Your Health Journey at your Fingertips.
+                </p>
+                <p class="mt-6 text-lg leading-8 text-gray-600">
+                  From lab results to doctor’s notes, all your medical
+                  information is securely stored and accessible to you and your
+                  healthcare providers, facilitating faster diagnosis, better
+                  treatment, and a seamless care experience.
+                </p>
+                <dl
+                  class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+                >
                   <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                      <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
-                        fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd"
+                      <svg
+                        class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
                           d="M5.5 17a4.5 4.5 0 01-1.44-8.765 4.5 4.5 0 018.302-3.046 3.5 3.5 0 014.504 4.272A4 4 0 0115 17H5.5zm3.75-2.75a.75.75 0 001.5 0V9.66l1.95 2.1a.75.75 0 101.1-1.02l-3.25-3.5a.75.75 0 00-1.1 0l-3.25 3.5a.75.75 0 101.1 1.02l1.95-2.1v4.59z"
-                          clip-rule="evenodd" />
+                          clip-rule="evenodd"
+                        />
                       </svg>
                       Access on the fly:
                     </dt>
-                    <dd class="inline">Securely access your health records online, from anywhere, at anytime.</dd>
+                    <dd class="inline">
+                      Securely access your health records online, from anywhere,
+                      at anytime.
+                    </dd>
                   </div>
                   <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                      <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
-                        fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd"
+                      <svg
+                        class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fill-rule="evenodd"
                           d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z"
-                          clip-rule="evenodd" />
+                          clip-rule="evenodd"
+                        />
                       </svg>
                       Secure Medical Record Storage:
                     </dt>
-                    <dd class="inline">All your health records are stored with the highest level of security.</dd>
+                    <dd class="inline">
+                      All your health records are stored with the highest level
+                      of security.
+                    </dd>
                   </div>
                   <div class="relative pl-9">
                     <dt class="inline font-semibold text-gray-900">
-                      <svg class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue" viewBox="0 0 20 20"
-                        fill="currentColor" aria-hidden="true">
+                      <svg
+                        class="absolute left-1 top-1 h-5 w-5 text-medicalink-blue"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        aria-hidden="true"
+                      >
                         <path
-                          d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z" />
-                        <path fill-rule="evenodd"
+                          d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"
+                        />
+                        <path
+                          fill-rule="evenodd"
                           d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                          clip-rule="evenodd" />
+                          clip-rule="evenodd"
+                        />
                       </svg>
                       User-Friendly Interface:
                     </dt>
-                    <dd class="inline">Simple and intuitive design for easy navigation and use.</dd>
+                    <dd class="inline">
+                      Simple and intuitive design for easy navigation and use.
+                    </dd>
                   </div>
                 </dl>
               </div>
             </div>
-            <img src="assets/images/patient-overview.png" alt="Product screenshot"
+            <img
+              src="assets/images/patient-overview.png"
+              alt="Product screenshot"
               class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-              width="2432" height="1442">
+              width="2432"
+              height="1442"
+            />
           </div>
         </div>
       </div>
@@ -189,30 +328,49 @@
     <!-- Stats block -->
     <div class="mt-5 py-24 sm:py-32 bg-medicalink-blue text-white">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+        <dl
+          class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3"
+        >
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
             <dt class="text-base leading-7">Registered Users</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">5+</dd>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
+            >
+              5+
+            </dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
-            <dt class="text-base leading-7 ">Medical Institutions Onboard</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">0</dd>
+            <dt class="text-base leading-7">Medical Institutions Onboard</dt>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
+            >
+              0
+            </dd>
           </div>
           <div class="mx-auto flex max-w-xs flex-col gap-y-4">
             <dt class="text-base leading-7">Medical Records</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight sm:text-5xl">10</dd>
+            <dd
+              class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
+            >
+              10
+            </dd>
           </div>
         </dl>
       </div>
     </div>
 
     <!-- Footer -->
-    <section id="footer" class="bg-medicalink-blue" style="height: 300px;"></section>
+    <section
+      id="footer"
+      class="bg-medicalink-blue"
+      style="height: 300px"
+    ></section>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/main.js"></script>
-</body>
+  </body>
 </html>
