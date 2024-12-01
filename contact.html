@@ -194,46 +194,33 @@
                 Fill in the form
               </h2>
 
-              <form>
+              <form action="send_email.php">
                 <div class="grid gap-4">
                   <!-- Grid -->
-                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
                     <div>
-                      <label for="hs-firstname-contacts-1" class="sr-only"
-                        >First Name</label
+                      <label for="name" class="sr-only"
+                        >Full Name</label
                       >
                       <input
                         type="text"
-                        name="hs-firstname-contacts-1"
-                        id="hs-firstname-contacts-1"
+                        name="name"
+                        id="name"
                         class="py-3 px-4 block w-full rounded-lg text-sm border-2"
-                        placeholder="First Name"
-                      />
-                    </div>
-
-                    <div>
-                      <label for="hs-lastname-contacts-1" class="sr-only"
-                        >Last Name</label
-                      >
-                      <input
-                        type="text"
-                        name="hs-lastname-contacts-1"
-                        id="hs-lastname-contacts-1"
-                        class="py-3 px-4 block w-full rounded-lg text-sm border-2"
-                        placeholder="Last Name"
+                        placeholder="Full Name"
                       />
                     </div>
                   </div>
                   <!-- End Grid -->
 
                   <div>
-                    <label for="hs-email-contacts-1" class="sr-only"
+                    <label for="email" class="sr-only"
                       >Email</label
                     >
                     <input
                       type="email"
-                      name="hs-email-contacts-1"
-                      id="hs-email-contacts-1"
+                      name="email"
+                      id="email"
                       autocomplete="email"
                       class="py-3 px-4 block w-full rounded-lg text-sm border-2"
                       placeholder="Email"
@@ -241,28 +228,28 @@
                   </div>
 
                   <div>
-                    <label for="hs-phone-number-1" class="sr-only"
+                    <label for="phone" class="sr-only"
                       >Phone Number</label
                     >
                     <input
                       type="text"
-                      name="hs-phone-number-1"
-                      id="hs-phone-number-1"
+                      name="phone"
+                      id="phone"
                       class="py-3 px-4 block w-full rounded-lg text-sm border-2"
                       placeholder="Phone Number"
                     />
                   </div>
 
                   <div>
-                    <label for="hs-about-contacts-1" class="sr-only"
-                      >Details</label
+                    <label for="message" class="sr-only"
+                      >Message</label
                     >
                     <textarea
-                      id="hs-about-contacts-1"
-                      name="hs-about-contacts-1"
+                      id="message"
+                      name="message"
                       rows="4"
                       class="py-3 px-4 block w-full rounded-lg text-sm border-2"
-                      placeholder="Details"
+                      placeholder="Message"
                     ></textarea>
                   </div>
                 </div>
@@ -288,7 +275,7 @@
 
             <div class="divide-y divide-gray-200">
               <!-- Icon Block -->
-              <div class="flex gap-x-7 py-6">
+              <!-- <div class="flex gap-x-7 py-6">
                 <span class="material-symbols-outlined">
                   notifications_active
                 </span>
@@ -319,11 +306,11 @@
                     </svg>
                   </a>
                 </div>
-              </div>
+              </div> -->
               <!-- End Icon Block -->
 
               <!-- Icon Block -->
-              <div class="flex gap-x-7 py-6">
+              <!-- <div class="flex gap-x-7 py-6">
                 <svg
                   class="flex-shrink-0 size-6 mt-1.5 text-gray-800"
                   xmlns="http://www.w3.org/2000/svg"
@@ -355,7 +342,7 @@
                     medicalink.team@gmail.com
                   </a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
