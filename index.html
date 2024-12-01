@@ -6,11 +6,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="icon" type="image/png" href="/assets/icons/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Medicalink" />
-    <link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
+<link rel="icon" type="image/svg+xml" href="/assets/icons/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/assets/icons/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/assets/icons/favicon/site.webmanifest" />
 
     <link
       rel="stylesheet"
@@ -69,13 +68,15 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="/" class="text-sm font-semibold leading-6 text-gray-900"
+          <!-- <a href="/" class="text-sm font-semibold leading-6 text-gray-900"
             >Home</a
-          >
+          > -->
           <a href="/ehr" class="text-sm font-semibold leading-6 text-gray-900"
             >EHR</a
           >
-          <a href="/research" class="text-sm font-semibold leading-6 text-gray-900"
+          <a
+            href="/research"
+            class="text-sm font-semibold leading-6 text-gray-900"
             >Research</a
           >
           <a
@@ -91,7 +92,9 @@
           >
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="/contact" class="text-sm/6 font-semibold text-gray-900">Contact Us</a>
+          <a href="/contact" class="text-sm/6 font-semibold text-gray-900"
+            >Contact Us</a
+          >
         </div>
       </nav>
 
@@ -166,7 +169,11 @@
                 >
               </div>
               <div class="py-6">
-                <a href="/contact" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Contact Us</a>
+                <a
+                  href="/contact"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >Contact Us</a
+                >
               </div>
             </div>
           </div>
@@ -181,23 +188,24 @@
           <h1
             class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Centralized Healthcare for Everyone.
           </h1>
           <p class="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat modi tempora itaque reprehenderit. Veritatis itaque deserunt aliquid laudantium blanditiis expedita earum in cupiditate repudiandae nostrum, voluptatem, omnis corrupti eos pariatur.
-          </p>
-          <p class="mt-6 text-lg leading-8 text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Simplify healthcare management with secure, streamlined solutions.
           </p>
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <a
               href="#"
-              class="flex-none bg-green-700 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-              >Lorem ipsum</a
+              class="flex-none border-1 border-blue-400 rounded px-3.5 py-1 text-sm font-semibold text-blue-400 shadow-sm hover:bg-blue-400 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+              >Explore Our EHR</a
             >
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="">
+      <img src="./assets/images/pexels1.jpg" height="200px"/>
     </div>
 
     <!-- Stats block -->
@@ -235,11 +243,51 @@
     </div>
 
     <!-- Footer -->
-    <footer
-      id="footer"
-      class="bg-medicalink-blue"
-      style="height: 300px"
-    ></footer>
+
+    <footer class="bg-white">
+      <div class="w-full mx-auto p-8 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <a
+            href="https://medicalink.lk/"
+            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+          >
+            <img
+              src="./assets/icons/main-logo-header.png"
+              class="h-8"
+              alt="MedicaLink Logo"
+            />
+          </a>
+          <ul
+            class="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0"
+          >
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">EHR</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Research</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Services</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline me-4 md:me-6">Store</a>
+            </li>
+            <li>
+              <a href="#" class="hover:underline">About Us</a>
+            </li>
+          </ul>
+        </div>
+        <hr
+          class="my-6 border-black sm:mx-auto lg:my-8"
+        />
+        <span
+          class="block text-sm text-black sm:text-center"
+          >© 2025
+          <a href="https://medicalink.lk/" class="hover:underline">MedicaLink</a>.
+          All Rights Reserved.</span
+        >
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
