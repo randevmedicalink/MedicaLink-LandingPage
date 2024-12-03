@@ -68,27 +68,32 @@
           </button>
         </div>
         <div class="hidden lg:flex lg:gap-x-12">
-          <a href="/" class="text-sm font-semibold leading-6 text-gray-900"
+          <!-- <a href="/" class="text-sm font-semibold leading-6 text-gray-900"
             >Home</a
-          >
+          > -->
           <a href="/ehr" class="text-sm font-semibold leading-6 text-gray-900"
-            >EHR</a
+            >EMR</a
           >
-          <a href="/store" class="text-sm font-semibold leading-6 text-gray-900"
-            >Store</a
+          <a
+            href="/research"
+            class="text-sm font-semibold leading-6 text-gray-900"
+            >Research</a
           >
           <a
             href="/services"
             class="text-sm font-semibold leading-6 text-gray-900"
             >Services</a
           >
-          <a href="/about" class="text-sm font-semibold leading-6 text-gray-900"
-            >About</a
+          <a href="/store" class="text-sm font-semibold leading-6 text-gray-900"
+            >Store</a
           >
-          <a
-            href="/contact"
-            class="text-sm font-semibold leading-6 text-gray-900"
-            >Contact</a
+          <a href="/about" class="text-sm font-semibold leading-6 text-gray-900"
+            >About Us</a
+          >
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="/contact" class="text-sm/6 font-semibold text-gray-900"
+            >Contact Us</a
           >
         </div>
       </nav>
@@ -140,12 +145,12 @@
                 <a
                   href="/ehr"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >EHR</a
+                  >EMR</a
                 >
                 <a
-                  href="/store"
+                  href="/research"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Store</a
+                  >Research</a
                 >
                 <a
                   href="/services"
@@ -153,14 +158,21 @@
                   >Services</a
                 >
                 <a
-                  href="/about"
+                  href="/store"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >About</a
+                  >Store</a
                 >
                 <a
-                  href="/contact"
+                  href="/about"
                   class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                  >Contact</a
+                  >About Us</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="/contact"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                  >Contact Us</a
                 >
               </div>
             </div>
@@ -187,48 +199,50 @@
 
     <footer class="bg-white">
       <div class="w-full mx-auto p-8 md:py-8">
-        <div class="sm:flex sm:items-center sm:justify-between">
-          <a
-            href="https://medicalink.lk/"
-            class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
-          >
-            <img
-              src="./assets/icons/main-logo-header.png"
-              class="h-8"
-              alt="MedicaLink Logo"
+        <footer class="bg-white">
+          <div class="w-full mx-auto p-8 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+              <a
+                href="https://medicalink.lk/"
+                class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+              >
+                <img
+                  src="./assets/icons/main-logo-header.png"
+                  class="h-8"
+                  alt="MedicaLink Logo"
+                />
+              </a>
+              <ul
+                class="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0"
+              >
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">EMR</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Research</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline me-4 md:me-6">Store</a>
+                </li>
+                <li>
+                  <a href="#" class="hover:underline">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <hr
+              class="my-6 border-black sm:mx-auto lg:my-8"
             />
-          </a>
-          <ul
-            class="flex flex-wrap items-center mb-6 text-sm font-medium text-black sm:mb-0"
-          >
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">EHR</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Research</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Services</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline me-4 md:me-6">Store</a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">About Us</a>
-            </li>
-          </ul>
-        </div>
-        <hr
-          class="my-6 border-black sm:mx-auto lg:my-8"
-        />
-        <span
-          class="block text-sm text-black sm:text-center"
-          >© 2025
-          <a href="https://medicalink.lk/" class="hover:underline">MedicaLink</a>.
-          All Rights Reserved.</span
-        >
-      </div>
-    </footer>
+            <span
+              class="block text-sm text-black sm:text-center"
+              >© 2025
+              <a href="https://medicalink.lk/" class="hover:underline">MedicaLink</a>.
+              All Rights Reserved.</span
+            >
+          </div>
+        </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
